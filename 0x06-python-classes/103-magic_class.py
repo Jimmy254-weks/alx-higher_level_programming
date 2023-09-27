@@ -1,10 +1,14 @@
+#!/usr/bin/python3
+
+"""Define a MagicClass matching exactly a bytecode provided by Holberton."""
+
 import math
 
 class MagicClass:
-    """This class represents a MagicClass, which is used to calculate the area and circumference of a circle."""
+    """Represent a circle."""
 
     def __init__(self, radius=0):
-        """Initialize a MagicClass with a given radius.
+        """Initialize a MagicClass.
 
         Args:
             radius (float or int): The radius of the new MagicClass.
@@ -17,9 +21,9 @@ class MagicClass:
         self.__radius = radius
 
     def area(self):
-        """Calculate and return the area of the MagicClass (circle)."""
-        return self.__radius ** 2 * math.pi
+        """Return the area of the MagicClass."""
+        return (self.__radius ** 2 * math.pi)
 
     def circumference(self):
-        """Calculate and return the circumference of the MagicClass (circle)."""
-        return 2 * math.pi * self.__radius
+        """Return the circumference of the MagicClass."""
+        return (2 * math.pi * self.__radius)
